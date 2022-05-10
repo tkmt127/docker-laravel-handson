@@ -25,5 +25,4 @@ Route::get('/hello_view/{name?}', function ($name = "World") {
     return view('hello', ['name' => $name]);
 });
 
-// Route::get('/hello_controller/{name?}', 'HelloController@index');
-// Route::get('/hello_controller', 'HelloController');
+Route::get('/hello_controller/{name?}', 'App\Http\Controllers\HelloController@index');
